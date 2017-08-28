@@ -11,7 +11,7 @@ To deploy on your server and use follow below instructions:
 4. npm install
 5. from the directory where mongodb is files are kept start
     the mongodb server, cd to ' c:\mongo\bin' then execute
-    'mongod --dbpath c:\node\blog\data'   (path to blog data)
+    'mongod --dbpath c:\node\blog\data'   (path to blog\data )
 
 6. from c:\node\blog to start the application
      'node app.js'
