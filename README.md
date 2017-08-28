@@ -14,7 +14,7 @@ To deploy on your server and use follow below instructions:
     'mongod --dbpath c:\node\blog\data'   (path to blog data)
 
 6. from c:\node\blog to start the application
-     node app.js
+     'node app.js'
 
 
 The name of database created is blog and which contains two collections
