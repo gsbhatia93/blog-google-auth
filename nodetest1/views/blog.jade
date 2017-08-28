@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 write your blogs
+
+  form(name="addBlog",method="post",action="/saveblog")
+    div.input
+        h2 title
+        input#inputTitle(type="text", placeholder="title", name="title")
+    h1
+    div.input
+      h2 body
+      textarea#inputBody(placeholder="write something",name="body",cols='45',rows='10')
+    button#btnSubmit(type="submit") submit

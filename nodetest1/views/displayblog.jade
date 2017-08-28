@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 hi
+  h2=blog.title
+  h3=blog.body
+  ul
+    each comment,i in blog.comments
+      li
+        h4=blog.comments.username
+        h4=blog.comments.comments
