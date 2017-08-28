@@ -1,0 +1,29 @@
+<!-- views/login.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title><%= title%></title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body        { padding-top:80px; }
+    </style>
+</head>
+<body>
+<div class="container">
+  <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+  <a href="/allblogs" class="btn btn-default btn-sm">All Blogs</a>
+  <h1></h1>
+<form name="form1" method="POST" action="/saveblog">
+
+
+      Title:  <input type="text" name="title" placeholder="title here"><br>
+      <br>
+      Body:  <textarea name='body' placeholder='write something' cols='50' rows='20'></textarea><br><br>
+              <input type='submit' placeholder='save' name='submit'>
+
+  </form>
+
+
+</div>
+</body>

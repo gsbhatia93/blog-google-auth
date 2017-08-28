@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  form(name="loginForm",method="post",action="/login")
+    div.input
+        h2 add username
+        input#inputUsername(type="text", placeholder="username", name="username")
+    div.input
+        h2 add username
+        input#inputPassword(type="text", placeholder="password", name="password")
+    button#btnSubmit(type="submit") submit
+  h2 authenticate using google
+  h1
+  a(href="/auth/provider") GOOGLE
