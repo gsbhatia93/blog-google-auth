@@ -1,9 +1,14 @@
 # blog-google-auth
-blogging system with comments and user login with google.
-The app is made with NodeJs, express using Ejs for frontend and Mongodb as backend.
-Passport module is used for connecting to google api for login and fetching data like profile, email and contacts. It has method passport.authenticate() defined in routes.js and it internally uses Google Strategy defined in config/passport.js. This connection with google strategy returns token of authentication and requested data, like in our case profile and email. The contacts had to be fetched using another get request to 'https://www.google.com/m8/feeds/contacts/'  
+Blogging app with comments and user login with Google Plus account.
+
+The app is made with NodeJs, express using Ejs for frontend and Mongodb for database.
+Passport module is used for connecting to google api for login and fetching data like profile, email and contacts. It has method passport.authenticate() defined in routes.js and it internally uses Google Strategy defined in config/passport.js. This connection with google strategy returns token of authentication and requested data, like in our case profile and email. The contacts had to be fetched using another get request to 'https://www.google.com/m8/feeds/contacts/'.  
+
+Passport also maintains user session and provides logout functionality. Mongoose provides interface to Mongodb and schema required like blog schema, user schema and comment schema. The schemas are defined in models folder. 
+
 The profile page displays the profile with data like username, id, email and contacts. 
-Passport also maintains user session and provides logout functionality. Mongoose provides interface to Mongodb and schema required like blog schema, user schema and comment schema. The schemas are defined in models folder.   
+User can write a blog, view all blogs, view a particular blog and comment on it.
+  
 
 To deploy on your server and use follow below instructions:
 1. I am assuming you have mongodb, npm and node js installed.
