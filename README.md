@@ -3,15 +3,16 @@
 
 The app is made with NodeJs, express using Ejs for frontend and Mongodb for database.
 PASSPORT module is used for connecting to google api for login and fetching data like profile, email and contacts. It has method passport.authenticate() defined in routes.js and it internally uses Google Strategy defined in config/passport.js. This connection with google strategy returns token of authentication and requested data, like in our case profile and email. The contacts had to be fetched using another get request to 'https://www.google.com/m8/feeds/contacts/' made with 'request' module.  
-
+![some text](/profile.png?raw=true)
 Passport also maintains user session and provides logout functionality. Mongoose provides interface to Mongodb and schema required like blog schema, user schema and comment schema. The schemas are defined in models folder. The app manipulates these schemas and data gets stored in db according to them.
-
+![some text](/all_blogs.png?raw=true)
 The profile page displays the profile with data like username, id, email and contacts. 
 User can write a blog, view all blogs, view a particular blog and comment on it.
 The app is extendable, one can easily add login for facebook, twitter or local login using email and password, pluggins for which are provided by Passport but to keep things simple I have provided login using Google only.
-
+![some text](/write_comment.png?raw=true)
 I have also used nodemon for debgging the app as it tracks the changes made to .js files and restarts the server.
  
+![some text](/write_blog.png?raw=true)
 <hr>
 <h5>To deploy on your server and run, follow given instructions:</h5>
 
