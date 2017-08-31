@@ -11,10 +11,18 @@ User can write a blog, view all blogs, view a particular blog and comment on it.
 The app is extendable, one can easily add login for facebook, twitter or local login using email and password, pluggins for which are provided by Passport but to keep things simple I have provided login using Google only.
 
 I have also used nodemon for debgging the app as it tracks the changes made to .js files and restarts the server.
- ![some text](/all_blogs.png?raw=true)
+
+The name of database created is blog and which contains two collections
+users and blogs, with comments stored as a part of blogs but with schema
+of their own. Please refer to models folder for db code.
+
+
+ ![some text](/login.png?raw=true)
 ![some text](/profile.png?raw=true)
-![some text](/write_comment.png?raw=true)
-![some text](/write_blog.png?raw=true)
+![some text](/display_all_blogs.png?raw=true)
+![some text](/all.png?raw=true)
+![some text](/comment1.png?raw=true)
+![some text](/comment2.png?raw=true)
 <hr>
 <h5>To deploy on your server and run, follow given instructions:</h5>
 
@@ -33,9 +41,7 @@ I have also used nodemon for debgging the app as it tracks the changes made to .
      'node app.js'
 
 
-The name of database created is blog and which contains two collections
-users and blogs, with comments stored as a part of blogs but with schema
-of their own. Please refer to models folder for db code.
+
 
 
 
