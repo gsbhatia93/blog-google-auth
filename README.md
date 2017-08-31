@@ -1,5 +1,5 @@
 # blog-google-auth
-Blogging app with comments and user login with Google Plus account.
+<h4>Blogging app with comments and user login with Google Plus account.</h4>
 
 The app is made with NodeJs, express using Ejs for frontend and Mongodb for database.
 Passport module is used for connecting to google api for login and fetching data like profile, email and contacts. It has method passport.authenticate() defined in routes.js and it internally uses Google Strategy defined in config/passport.js. This connection with google strategy returns token of authentication and requested data, like in our case profile and email. The contacts had to be fetched using another get request to 'https://www.google.com/m8/feeds/contacts/'.  
@@ -8,9 +8,10 @@ Passport also maintains user session and provides logout functionality. Mongoose
 
 The profile page displays the profile with data like username, id, email and contacts. 
 User can write a blog, view all blogs, view a particular blog and comment on it.
-  
-
+ 
+<hr>
 To deploy on your server and use follow below instructions:
+<br>
 1. I am assuming you have mongodb, npm and node js installed.
 
 2. Name of my main folder is 'blog' which contains code
