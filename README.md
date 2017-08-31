@@ -20,8 +20,9 @@ of their own. Please refer to models folder for db code.
  ![some text](/login.png?raw=true)
 ![some text](/profile.png?raw=true)
 ![some text](/display_all_blogs.png?raw=true)
-![some text](/all.png?raw=true)
 ![some text](/comment1.png?raw=true)
+![some text](/all.png?raw=true)
+
 ![some text](/comment2.png?raw=true)
 <hr>
 <h5>To deploy on your server and run, follow given instructions:</h5>
