@@ -2,13 +2,13 @@
 <h4>Blogging app with comments and user login with Google Plus account.</h4>
 
 The app is made with NodeJs, express using Ejs for frontend and Mongodb for database.
-Passport module is used for connecting to google api for login and fetching data like profile, email and contacts. It has method passport.authenticate() defined in routes.js and it internally uses Google Strategy defined in config/passport.js. This connection with google strategy returns token of authentication and requested data, like in our case profile and email. The contacts had to be fetched using another get request to 'https://www.google.com/m8/feeds/contacts/'.  
+PASSPORT module is used for connecting to google api for login and fetching data like profile, email and contacts. It has method passport.authenticate() defined in routes.js and it internally uses Google Strategy defined in config/passport.js. This connection with google strategy returns token of authentication and requested data, like in our case profile and email. The contacts had to be fetched using another get request to 'https://www.google.com/m8/feeds/contacts/'.  
 
 Passport also maintains user session and provides logout functionality. Mongoose provides interface to Mongodb and schema required like blog schema, user schema and comment schema. The schemas are defined in models folder. 
 
 The profile page displays the profile with data like username, id, email and contacts. 
 User can write a blog, view all blogs, view a particular blog and comment on it.
-The app is highly protable, one can easily add login for facebook, twitter or local login using email and password but to keep things simple I have provided login using Google only.
+The app is extendable, one can easily add login for facebook, twitter or local login using email and password, pluggins for which are provided by Passport but to keep things simple I have provided login using Google only.
 
 I have also used nodemon for debgging the app as it tracks the changes made to .js files and restarts the server.
  
