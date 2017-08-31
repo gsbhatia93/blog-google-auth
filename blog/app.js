@@ -14,14 +14,14 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
 var session      = require('express-session');
-var url = 'mongodb://127.0.0.1/nodetest1';
+var url = 'mongodb://127.0.0.1/blog';
 //var configDB = require('./config/database.js');
 mongoose.connect(url); // connect to our database
 
 // new code for connection to mongo
  var mongo=require('mongodb');
  var monk = require('monk');
- var db  = monk('localhost:27017/nodetest1');
+ var db  = monk('localhost:27017/blog');
 
 var app = express();
 
