@@ -8,15 +8,18 @@ Passport also maintains user session and provides logout functionality. Mongoose
 
 The profile page displays the profile with data like username, id, email and contacts. 
 User can write a blog, view all blogs, view a particular blog and comment on it.
+The app is highly protable, one can easily add login for facebook, twitter or local login using email and password but to keep things simple I have provided login using Google only.
+
+I have also used nodemon for debgging the app as it tracks the changes made to .js files and restarts the server.
  
 <hr>
-To deploy on your server and use follow below instructions:
+<h5>To deploy on your server and run, follow given instructions:</h5>
 
 1. I am assuming you have mongodb, npm and node js installed.
 
-2. Name of my main folder is 'blog' which contains code
+2. Clone the repo.Name of the main folder is 'blog' which contains code and data.
 
-3. go in the parent directory that contains code 'blog'
+3. cd into blog directory that contains package.json
 
 4. npm install
 5. from the directory where mongodb is files are kept start
