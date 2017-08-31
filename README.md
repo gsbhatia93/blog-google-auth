@@ -30,13 +30,13 @@ of their own. Please refer to models folder for db code.
 1. I am assuming you have mongodb, npm and node js installed.
 
 2. Clone the repo.Name of the main folder is 'blog' which contains code and data.
-
-3. cd into blog directory that contains package.json
-
-4. npm install
-5. from the directory where mongodb is files are kept start
+3. from the directory where mongodb is files are kept start
     the mongodb server, cd to ' c:\mongo\bin' then execute
     'mongod --dbpath c:\node\blog\data'   (path to blog\data )
+
+4. cd into blog directory that contains package.json
+
+5. npm install
 
 6. from c:\node\blog to start the application
      'node app.js'
