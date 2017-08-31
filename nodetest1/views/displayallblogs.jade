@@ -1,9 +1,0 @@
-extends layout
-
-block content
-  h1.
-    All blogs
-  ul
-    each blog, i in bloglist
-      li
-          a(href="/displayblog?id="+blog._id)= blog.title
