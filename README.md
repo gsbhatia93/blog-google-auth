@@ -11,7 +11,10 @@ User can write a blog, view all blogs, view a particular blog and comment on it.
 The app is extendable, one can easily add login for facebook, twitter or local login using email and password, pluggins for which are provided by Passport but to keep things simple I have provided login using Google only.
 
 I have also used nodemon for debgging the app as it tracks the changes made to .js files and restarts the server.
- 
+ ![some text](/all_blogs.png?raw=true)
+![some text](/profile.png?raw=true)
+![some text](/write_comment.png?raw=true)
+![some text](/write_blog.png?raw=true)
 <hr>
 <h5>To deploy on your server and run, follow given instructions:</h5>
 
