@@ -11,7 +11,7 @@ User can write a blog, view all blogs, view a particular blog and comment on it.
  
 <hr>
 To deploy on your server and use follow below instructions:
-<br>
+
 1. I am assuming you have mongodb, npm and node js installed.
 
 2. Name of my main folder is 'blog' which contains code
